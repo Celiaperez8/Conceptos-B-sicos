@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalización Celia Pérez Gajete</title>
+</head>
+<body style="background-color: fuchsia;">
+ <h1>Normalización</h1>  
+<a href ="#dependenciasFuncionales">Dependencias funcionales</a> <Br>
+<a href ="#dominioDeAtributos">Dominio de atributos</a> <br>
+<a href ="#FN1">Formal normal 1</a> <br>
+<a href ="#FN2">Formal normal 2</a> <br>
+<a href ="#FN3">Forma normal 3</a> <br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a name="dependenciasFuncionales">Dependencias funcionales</a>
+<p>Las dependencias funcionales en una base de datos establecen relaciones entre los atributos. 
+Por ejemplo, en una tabla de una base de datos de empleados, podríamos tener los atributos "ID de empleado", "Nombre" y "Departamento". 
+Aquí, el ID de empleado determina el nombre y el departamento, lo que se puede representar como ID de empleado -> Nombre, ID de empleado -> Departamento. 
+Estas son dependencias funcionales, donde un valor en un atributo determina de manera única los valores en otros atributos.</p>
+<br><br><br<b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br<b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a name="dominioDeAtributos">Dominio de atributos</a>
+<p>El dominio de los atributos simplemente se refiere al conjunto de valores que pueden tomar los atributos en una tabla.
+Por ejemplo, si tenemos una tabla 'a' con atributos {a, b, c}, el dominio de 'a' podría ser un conjunto de números enteros, el de 'b' podrían ser cadenas de texto 
+y el de 'c' podrían ser valores booleanos.</p>
+<br><br><br<b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br<b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a name="FN1">Forma normal 1</a>
+<p>La Forma Normal 1 (FN1) se enfoca en eliminar la redundancia de datos en una base de datos. Para transformar una tabla a FN1, separamos los conjuntos de datos en 
+tablas más pequeñas, evitando la repetición de información. Por ejemplo, si tenemos una tabla con "ID de empleado", "Nombre" y "Departamento", y el nombre del 
+departamento se repite para varios empleados, podríamos crear una tabla separada para los departamentos y vincularla mediante claves.</p>
+<br><br><br<b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br<b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a name="FN2">Forma normal 2</a>
+<p>La Forma Normal 2 (FN2) se centra en eliminar dependencias parciales, lo que significa que ningún atributo no clave debe depender de solo una parte de una clave 
+candidata. Por ejemplo, si en una tabla tenemos una clave compuesta por "ID de empleado" y "ID de proyecto", ningún otro atributo debería depender solo del "ID de 
+empleado" o solo del "ID de proyecto".</p>
+<br><br><br<b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br<b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a name="FN3">Forma normal 3</a>
+<p>La Forma Normal 3 (FN3) trata de eliminar dependencias transitivas. En este nivel, ningún atributo no clave debe depender de otro atributo no clave. 
+Por ejemplo, si en una tabla tenemos "ID de empleado", "ID de proyecto" y "Horas trabajadas", y las horas trabajadas dependen de "ID de proyecto" pero no directamente 
+del "ID de empleado", entonces tendríamos una dependencia transitiva que deberíamos eliminar para cumplir con FN3.</p>
+</body>
+</html>
